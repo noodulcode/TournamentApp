@@ -37,7 +37,7 @@
             this.prizeAmountLabel = new System.Windows.Forms.Label();
             this.prizePercentageLabel = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.prizePercentageValue = new System.Windows.Forms.TextBox();
             this.createPrizeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -129,12 +129,12 @@
             this.orLabel.TabIndex = 25;
             this.orLabel.Text = "-or-";
             // 
-            // textBox1
+            // prizePercentageValue
             // 
-            this.textBox1.Location = new System.Drawing.Point(369, 482);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(441, 50);
-            this.textBox1.TabIndex = 26;
+            this.prizePercentageValue.Location = new System.Drawing.Point(369, 482);
+            this.prizePercentageValue.Name = "prizePercentageValue";
+            this.prizePercentageValue.Size = new System.Drawing.Size(441, 50);
+            this.prizePercentageValue.TabIndex = 26;
             // 
             // createPrizeButton
             // 
@@ -158,7 +158,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(920, 779);
             this.Controls.Add(this.createPrizeButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.prizePercentageValue);
             this.Controls.Add(this.orLabel);
             this.Controls.Add(this.prizePercentageLabel);
             this.Controls.Add(this.prizeAmountValue);
@@ -188,7 +188,7 @@
         private Label prizeAmountLabel;
         private Label prizePercentageLabel;
         private Label orLabel;
-        private TextBox textBox1;
+        private TextBox prizePercentageValue;
         private Button createPrizeButton;
     }
 }

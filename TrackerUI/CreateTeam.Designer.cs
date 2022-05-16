@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.teamNameLabel = new System.Windows.Forms.Label();
-            this.createTeamLabel = new System.Windows.Forms.Label();
+            this.headerLabel = new System.Windows.Forms.Label();
             this.addMemberButton = new System.Windows.Forms.Button();
             this.selectTeamMemberDropDown = new System.Windows.Forms.ComboBox();
             this.selectTeamMemberLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.selectTeamNameDropDown = new System.Windows.Forms.ComboBox();
+            this.addNewMemberGroupBox = new System.Windows.Forms.GroupBox();
             this.firstNameValue = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameValue = new System.Windows.Forms.TextBox();
@@ -47,7 +47,7 @@
             this.teamMembersListBox = new System.Windows.Forms.ListBox();
             this.deleteSelectedPrizeButton = new System.Windows.Forms.Button();
             this.createTeamButton = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.addNewMemberGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // teamNameLabel
@@ -62,16 +62,16 @@
             this.teamNameLabel.Text = "Team Name";
             this.teamNameLabel.UseCompatibleTextRendering = true;
             // 
-            // createTeamLabel
+            // headerLabel
             // 
-            this.createTeamLabel.AutoSize = true;
-            this.createTeamLabel.Font = new System.Drawing.Font("Segoe UI Light", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.createTeamLabel.ForeColor = System.Drawing.Color.SkyBlue;
-            this.createTeamLabel.Location = new System.Drawing.Point(22, 9);
-            this.createTeamLabel.Name = "createTeamLabel";
-            this.createTeamLabel.Size = new System.Drawing.Size(322, 74);
-            this.createTeamLabel.TabIndex = 4;
-            this.createTeamLabel.Text = "Create Team";
+            this.headerLabel.AutoSize = true;
+            this.headerLabel.Font = new System.Drawing.Font("Segoe UI Light", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.headerLabel.ForeColor = System.Drawing.Color.SkyBlue;
+            this.headerLabel.Location = new System.Drawing.Point(22, 9);
+            this.headerLabel.Name = "headerLabel";
+            this.headerLabel.Size = new System.Drawing.Size(322, 74);
+            this.headerLabel.TabIndex = 4;
+            this.headerLabel.Text = "Create Team";
             // 
             // addMemberButton
             // 
@@ -107,34 +107,34 @@
             this.selectTeamMemberLabel.TabIndex = 19;
             this.selectTeamMemberLabel.Text = "Select Team Member";
             // 
-            // comboBox1
+            // selectTeamNameDropDown
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(46, 169);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(676, 53);
-            this.comboBox1.TabIndex = 23;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.selectTeamNameDropDown.FormattingEnabled = true;
+            this.selectTeamNameDropDown.Location = new System.Drawing.Point(46, 169);
+            this.selectTeamNameDropDown.Name = "selectTeamNameDropDown";
+            this.selectTeamNameDropDown.Size = new System.Drawing.Size(676, 53);
+            this.selectTeamNameDropDown.TabIndex = 23;
+            this.selectTeamNameDropDown.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // groupBox1
+            // addNewMemberGroupBox
             // 
-            this.groupBox1.Controls.Add(this.createMemberButton);
-            this.groupBox1.Controls.Add(this.phoneNumberValue);
-            this.groupBox1.Controls.Add(this.phoneNumberLabel);
-            this.groupBox1.Controls.Add(this.emailValue);
-            this.groupBox1.Controls.Add(this.emailLabel);
-            this.groupBox1.Controls.Add(this.lastNameValue);
-            this.groupBox1.Controls.Add(this.lastNameLabel);
-            this.groupBox1.Controls.Add(this.firstNameValue);
-            this.groupBox1.Controls.Add(this.firstNameLabel);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.SkyBlue;
-            this.groupBox1.Location = new System.Drawing.Point(46, 532);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(676, 573);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add New Member";
+            this.addNewMemberGroupBox.Controls.Add(this.createMemberButton);
+            this.addNewMemberGroupBox.Controls.Add(this.phoneNumberValue);
+            this.addNewMemberGroupBox.Controls.Add(this.phoneNumberLabel);
+            this.addNewMemberGroupBox.Controls.Add(this.emailValue);
+            this.addNewMemberGroupBox.Controls.Add(this.emailLabel);
+            this.addNewMemberGroupBox.Controls.Add(this.lastNameValue);
+            this.addNewMemberGroupBox.Controls.Add(this.lastNameLabel);
+            this.addNewMemberGroupBox.Controls.Add(this.firstNameValue);
+            this.addNewMemberGroupBox.Controls.Add(this.firstNameLabel);
+            this.addNewMemberGroupBox.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.addNewMemberGroupBox.ForeColor = System.Drawing.Color.SkyBlue;
+            this.addNewMemberGroupBox.Location = new System.Drawing.Point(46, 532);
+            this.addNewMemberGroupBox.Name = "addNewMemberGroupBox";
+            this.addNewMemberGroupBox.Size = new System.Drawing.Size(676, 573);
+            this.addNewMemberGroupBox.TabIndex = 24;
+            this.addNewMemberGroupBox.TabStop = false;
+            this.addNewMemberGroupBox.Text = "Add New Member";
             // 
             // firstNameValue
             // 
@@ -269,19 +269,19 @@
             this.Controls.Add(this.createTeamButton);
             this.Controls.Add(this.deleteSelectedPrizeButton);
             this.Controls.Add(this.teamMembersListBox);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.addNewMemberGroupBox);
+            this.Controls.Add(this.selectTeamNameDropDown);
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.selectTeamMemberDropDown);
             this.Controls.Add(this.selectTeamMemberLabel);
             this.Controls.Add(this.teamNameLabel);
-            this.Controls.Add(this.createTeamLabel);
+            this.Controls.Add(this.headerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "CreateTeam";
             this.Text = "Create Team";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.addNewMemberGroupBox.ResumeLayout(false);
+            this.addNewMemberGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,12 +289,12 @@
 
         #endregion
         private Label teamNameLabel;
-        private Label createTeamLabel;
+        private Label headerLabel;
         private Button addMemberButton;
         private ComboBox selectTeamMemberDropDown;
         private Label selectTeamMemberLabel;
-        private ComboBox comboBox1;
-        private GroupBox groupBox1;
+        private ComboBox selectTeamNameDropDown;
+        private GroupBox addNewMemberGroupBox;
         private TextBox firstNameValue;
         private Label firstNameLabel;
         private Button createMemberButton;
